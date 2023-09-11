@@ -10,7 +10,6 @@ import org.springframework.web.client.RestClient;
 import java.util.List;
 
 @Service
-@Profile("!httpinterfaceclient")
 public class PostServiceImpl implements PostService {
 
     private final RestClient restClient;

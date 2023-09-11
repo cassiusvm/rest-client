@@ -2,6 +2,7 @@ package dev.danvega.restclient.service;
 
 import dev.danvega.restclient.post.Post;
 import dev.danvega.restclient.service.PostService;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,7 +12,7 @@ import org.springframework.web.service.annotation.PutExchange;
 
 import java.util.List;
 
-@Profile("httpinterfaceclient")
+@Primary
 public interface JsonPlaceholderService extends PostService {
 
     @Override
