@@ -1,7 +1,6 @@
 package dev.danvega.restclient.service;
 
 import dev.danvega.restclient.post.Post;
-import org.springframework.context.annotation.Profile;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
@@ -25,7 +24,8 @@ public class PostServiceImpl implements PostService {
         return restClient.get()
                 .uri("/posts")
                 .retrieve()
-                .body(new ParameterizedTypeReference<List<Post>>() {});
+                .body(new ParameterizedTypeReference<>() {
+                });
     }
 
     @Override
