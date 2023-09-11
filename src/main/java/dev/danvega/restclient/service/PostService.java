@@ -10,7 +10,7 @@ public interface PostService {
 
     Post update(Integer id, Post post);
 
-    Post findById(int id);
+    Post findById(Integer id);
 
     List<Post> findAll();
 
