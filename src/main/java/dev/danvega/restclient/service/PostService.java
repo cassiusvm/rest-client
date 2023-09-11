@@ -1,4 +1,6 @@
-package dev.danvega.restclient.post;
+package dev.danvega.restclient.service;
+
+import dev.danvega.restclient.post.Post;
 
 import java.util.List;
 

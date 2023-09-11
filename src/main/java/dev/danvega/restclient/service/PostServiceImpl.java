@@ -1,6 +1,6 @@
-package dev.danvega.restclient.post;
+package dev.danvega.restclient.service;
 
-import org.springframework.context.annotation.Primary;
+import dev.danvega.restclient.post.Post;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
@@ -9,7 +9,7 @@ import org.springframework.web.client.RestClient;
 import java.util.List;
 
 @Service
-@Primary
+//@Primary
 public class PostServiceImpl implements PostService {
 
     private final RestClient restClient;

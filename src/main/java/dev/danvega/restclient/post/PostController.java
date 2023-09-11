@@ -1,5 +1,6 @@
 package dev.danvega.restclient.post;
 
+import dev.danvega.restclient.service.PostService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,7 +1,7 @@
-package dev.danvega.restclient.client;
+package dev.danvega.restclient.service;
 
 import dev.danvega.restclient.post.Post;
-import dev.danvega.restclient.post.PostService;
+import dev.danvega.restclient.service.PostService;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.service.annotation.GetExchange;
