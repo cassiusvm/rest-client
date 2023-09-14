@@ -9,10 +9,11 @@ import org.springframework.web.client.support.RestClientAdapter;
 import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 
 @Configuration
-public class HTTPInterfaceClient {
+public class HTTPInterfaceClientConfig {
 
-    @Bean
+
     @Primary
+    @Bean(name = "jsonPlaceholderService")
     JsonPlaceholderService jsonPlaceholderService() {
         RestClient client = RestClient.create("https://jsonplaceholder.typicode.com");
         HttpServiceProxyFactory factory = HttpServiceProxyFactory
